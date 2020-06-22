@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(to right, plum, purple);
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid purple;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header li {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+li .dropdown {
+    display: inline-block;
+}
+
+.dropdown:hover .isi-dropdown {
+    display: block;
+}
+
+.isi-dropdown a:hover {
+    color: #fff !important;
+}
+
+.isi-dropdown {
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+    background-color: #f9f9f9;
+    opacity: 0.8;
+}
+
+.isi-dropdown a{
+    color: #3c3c3c !important;
+}
+
+.isi-dropdown a:hover {
+    color: #232323 !important;
+    background: #f3f3f3 !important;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header #branding, header .active a {
+    color: #fff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: plum;
+    font-weight: bold;
+}
+
+#showcase {
+    min-height: 459px;
+    background-image: url(https://img.pngio.com/computer-background-png-2-background-download-computer-png-backgrounds-624_260.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+}
+
+#showcase h1 {
+    margin: 120px 0 50px 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px grey;
+}
+
+#showcase p {
+    font-size: 25px;
+    text-shadow: 2px 2px 5px plum;
+}
+
+#newsletter {
+    padding: 15px;
+    color: #fff;
+    background: linear-gradient(to right, plum, purple);
+}
+
+#newsletter h1 {
+    float: left;
+    margin-top: 20px;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 13px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.buttonsubs {
+    height: 38px;
+    background-color: purple;
+    border: 1px;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.buttonsubs:hover {
+    border: 1px solid grey;
+    box-shadow: 2px 2px 8px grey;
+}
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background: linear-gradient(to right, plum, purple);
+    text-align: center;
+    font-weight: bold;
+}
+
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin: 25px;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
